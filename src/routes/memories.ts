@@ -73,7 +73,7 @@ export async function memoriesRoutes(app: FastifyInstance) {
       },
     })
 
-    return reply.code(200).send(memory)
+    return reply.status(200).send(memory)
   })
 
   app.put('/memories/:id', async (request, reply) => {
